@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        padding: 40px;
+        background-color: blue;
+        max-width: 120px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Color Box</div>
+    <script>
+      const box = document.getElementById("box");
+      box.addEventListener("mouseover", () => {
+        box.style.padding = "20px";
+        box.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

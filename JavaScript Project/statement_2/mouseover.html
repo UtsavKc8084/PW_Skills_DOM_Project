@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <strong>Lorem</strong>ipsum dolor sit amet, consectetur adipisicing elit.
+      Magnam, accusamus? Rem dolores provident cupiditate tenetur quidem, sequi
+      omnis assumenda, inventore, pariatur obcaecati nisi dicta corrupti dolorem
+      natus neque in. Illum!
+    </p>
+    <script>
+      const title = document.getElementsByTagName("strong");
+      title[0].addEventListener("mouseover", () => {
+        title[0].style.fontSize = "25px";
+        title[0].style.color = "gold";
+      });
+    </script>
+  </body>
+</html>

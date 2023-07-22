@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+    <style>
+      input {
+        width: 50vw;
+      }
+      #color-input {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="color-input">Color Change :</label>
+    <input
+      id="color-input"
+      type="text"
+      placeholder="Key up for red color and key down for green color "
+    />
+    <script>
+      document.getElementById("color-input").addEventListener("keydown", () => {
+        document.getElementById("color-input").style.backgroundColor = "green";
+      });
+      document.getElementById("color-input").addEventListener("keyup", () => {
+        document.getElementById("color-input").style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

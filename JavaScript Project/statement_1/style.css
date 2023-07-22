@@ -1,0 +1,21 @@
+.main-contain {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(22, 86, 75, 0.546);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  gap: 10px;
+}
+.counter-content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#reset-btn {
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 13px;
+}

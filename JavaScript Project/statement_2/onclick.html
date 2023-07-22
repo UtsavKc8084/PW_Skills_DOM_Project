@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 250px;
+        text-align: center;
+      }
+      #btn-image {
+        padding: 20px 40px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn-image" onclick="showImage()">Show Image</button>
+    <script>
+      const btnImage = document.getElementById("btn-image");
+
+      function showImage() {
+        btnImage.innerText = "View Image";
+        btnImage.style.backgroundColor = "pink";
+        document.body.style.backgroundImage =
+          "url(https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg)";
+        document.body.style.backgroundRepeat = "no-repeat";
+      }
+    </script>
+  </body>
+</html>

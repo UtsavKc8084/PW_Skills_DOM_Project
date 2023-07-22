@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 250px;
+      }
+      #hidden_value {
+        text-align: center;
+        padding: 12px;
+      }
+      #p-text {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="hidden_value">Unlock Treasure</button>
+    <p id="p-text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eius
+      delectus, ipsa suscipit dolore aut commodi et reprehenderit inventore,
+      ipsum tenetur. Voluptate inventore minus amet enim exercitationem sed
+      provident, est recusandae necessitatibus soluta a ad assumenda, sunt odio
+      magni alias?
+    </p>
+    <script>
+      const hidden_btn = document.getElementById("hidden_value");
+      const pText = document.getElementById("p-text");
+      hidden_btn.addEventListener("dblclick", () => {
+        hidden_btn.innerText = "Your Treasure";
+        pText.style.display = "block";
+        pText.style.border = "2px solid gold";
+      });
+    </script>
+  </body>
+</html>

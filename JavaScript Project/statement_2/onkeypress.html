@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        text-align: center;
+        margin: 250px;
+      }
+      #emo-btn {
+        padding: 25px;
+        border-radius: 10px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="emo-btn" onkeypress="emo()">Create Smile Emo</button>
+    <script>
+      function emo() {
+        document.getElementById("emo-btn").style.backgroundColor = "gold";
+        const image = document.createElement("div");
+
+        image.textContent = ":)";
+        image.setAttribute("id", "image_id");
+        image.style.fontSize = "50px";
+
+        document.body.appendChild(image);
+      }
+    </script>
+  </body>
+</html>
